@@ -15,7 +15,7 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        // Cargar las escrituras en una lista
+        
         List<Scripture> scriptures = new List<Scripture>
         {
             new Scripture("John 3:16", "For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life."),
@@ -41,7 +41,7 @@ public class Program
                 break;
             }
 
-            // Intentar ocultar palabras
+            
             currentScripture.HideRandomWords();
         }
     }
@@ -71,8 +71,8 @@ public class Scripture
     public void HideRandomWords()
     {
         Random random = new Random();
-        // Elegir cuántas palabras ocultar (puedes ajustar esto)
-        int wordsToHide = random.Next(1, 4); // 1 a 3 palabras a ocultar
+        
+        int wordsToHide = random.Next(1, 4); 
 
         for (int i = 0; i < wordsToHide; i++)
         {
